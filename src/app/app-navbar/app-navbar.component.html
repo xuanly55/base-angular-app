@@ -1,0 +1,36 @@
+<div class="fixed-top">
+  <div class="lds-container-fluid px-0">
+    <div class="lds-row no-gutters">
+      <div class="lds-col-6 lds-col-lg-3 order-lg-1 pl-2 app-navbar-background">
+        <div class="app-logo-container" (click)="goHome()"></div>
+      </div>
+
+      <div class="lds-col-lg order-lg-2 order-last" [ngClass]="{ 'app-navbar-background': !tabs }">
+        <ul class="lds-nav lds-nav-centered lds-nav-tabs app-tabs-justified app-navbar-background">
+          <li *ngFor="let tab of tabs" class="lds-nav-item" (click)="handleTabClicked(tab.id)">
+            <a class="lds-nav-link" [ngClass]="{ 'active': tab.active }" href="javascript: void(0)">{{ tab.label }}</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="lds-col-6 lds-col-lg-3 order-lg-3 app-navbar-background">
+        <div class="app-navbar-right-container">
+          <div dropdown (onShown)="onShown()" (onHidden)="onHidden()" (isOpenChange)="isOpenChange()">
+            <a href id="user-dropdown" dropdownToggle (click)="false" aria-controls="user-dropdown">
+              <span class="lds-badge lds-badge-circle lds-badge-secondary mr-2 pt-2" style="font-size: .75rem"><i class="fas fa-user"></i></span>
+            </a>
+            <ul id="user-dropdown" *dropdownMenu class="lds-dropdown-menu lds-dropdown-menu-right" role="menu"
+              aria-labelledby="user-dropdown">
+              <li *ngFor="let choice of items">
+                <a class="lds-dropdown-item" href="javascript: void(0);" (click)="choice.action()">
+                  <span class="dd-icon"><i class="fas fa-fw" [ngClass]="choice.icon"></i></span>
+                  <span class="dd-label">{{ choice.label }}</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

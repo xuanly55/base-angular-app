@@ -1,0 +1,9 @@
+/* Webfont: LionbridgeSans-Regular */@font-face {
+    font-family: 'LionbridgeSans';
+    src: url('LionbridgeSans-Regular0918.woff2') format('woff2'), /* Modern Browsers */
+         url('LionbridgeSans-Regular0918.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

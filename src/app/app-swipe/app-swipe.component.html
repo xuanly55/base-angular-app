@@ -1,0 +1,21 @@
+<!-- <div (touchstart)="swipe($event, 'start')" (touchend)="swipe($event, 'end')">
+  App content here
+</div> -->
+
+<div class="lds-containter">
+  <div class="lds-row">
+    <div class="lds-col-lg-6 offset-md-3">
+
+      <div class="gesture__zone" (pan)="onPan($event)">
+        <h1>Pan Gesture</h1>
+        <p [innerHTML]="eventText"></p>
+      </div>
+
+      <div class="gesture__indicator" *ngFor="let indicator of indicators.gestureIndicators" [style.top.px]="indicator.y - (indicator.size/2)"
+        [style.left.px]="indicator.x - (indicator.size/2)" [style.width.px]="indicator.size" [style.height.px]="indicator.size"
+        [style.transform]="indicator.transform" [@indicatorState]="indicator.state">
+      </div>
+
+    </div>
+  </div>
+</div>

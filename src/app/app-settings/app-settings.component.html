@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<div class="app-page-body">
+  <div class="lds-container">
+    <div class="lds-row mb-4">
+      <div class="lds-col clickable" (click)="backToMain()"><i class="fas fa-arrow-left"></i>
+        Back
+      </div>
+    </div>
+    <div class="lds-form-group lds-row">
+      <label for="inputEmail" class="lds-col-lg-3 lds-col-form-label" required>Appearance</label>
+      <div class="lds-col-lg-7">
+
+        <div class="lds-btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="lds-btn lds-btn-secondary" [ngClass]="{ 'active': currentTheme === 'Dark' }"
+            (click)="toggleTheme('Dark')"><i class="fas fa-moon"></i> Dark Theme</button>
+          <button type="button" class="lds-btn lds-btn-secondary" [ngClass]="{ 'active': currentTheme === 'Light' }"
+            (click)="toggleTheme('Light')"><i class="fas fa-sun"></i> Light Theme</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

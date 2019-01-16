@@ -1,0 +1,40 @@
+<div class="lds-container-fluid lds-signin-container">
+      <div class="lds-row no-gutters">
+            <div class="lds-col-lg-9 lds-signin-background"></div>
+            <div class="lds-col-lg-3 lds-signin-right-container">
+                  <div class="lds-signin-lionbridge-logo"></div>
+
+                  <div class="lds-signin-info-container">
+                        <p>
+                              If you are a Partner User of the system, please log in using the same
+                              credentials as those used to access our
+                              <a href="">Service Partner Portal</a>.
+                        </p>
+                        <p>
+                              If you are an Employee, please use your Lionbridge account
+                              (someone@lionbridge.com).
+                        </p>
+                  </div>
+
+                  <form #ssoLoginForm="ngForm" class="needs-validation" novalidate>
+                        <div class="lds-signin-credentials-container">
+                              <div class="lds-form-group">
+                                    <input autocomplete="off" class="lds-form-control" [(ngModel)]="ssoLoginModel.email"
+                                          name="inputEmail" placeholder="Email" required="" type="email" />
+                              </div>
+                              <div class="lds-form-group">
+                                    <input class="lds-form-control" [(ngModel)]="ssoLoginModel.password" name="inputPassword"
+                                          placeholder="Password" required="" type="password" />
+                              </div>
+                        </div>
+                        <button class="lds-btn lds-btn-primary" (click)="login()" [disabled]="!ssoLoginModel.email && !ssoLoginModel.password">
+                              Sign In
+                        </button>
+                  </form>
+
+                  <div class="lds-signin-footer-container">
+                        <span>Home</span> <span>Privacy</span>
+                  </div>
+            </div>
+      </div>
+</div>
