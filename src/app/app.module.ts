@@ -31,6 +31,7 @@ import { DeviceLaptopComponent } from './components/device-laptop/device-laptop.
 import { DeviceSmartphoneComponent } from './components/device-smartphone/device-smartphone.component';
 import { DeviceTabletComponent } from './components/device-tablet/device-tablet.component';
 import { LdsToggleComponent } from './components/lds-toggle/lds-toggle.component';
+import { LdsRadioComponent } from './components/lds-radio/lds-radio.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { LdsToggleComponent } from './components/lds-toggle/lds-toggle.component
     DeviceLaptopComponent,
     DeviceSmartphoneComponent,
     DeviceTabletComponent,
-    LdsToggleComponent
+    LdsToggleComponent,
+    LdsRadioComponent
   ],
   imports: [
     BrowserModule,

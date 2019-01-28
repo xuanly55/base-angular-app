@@ -1,0 +1,120 @@
+.lds-radio-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-size: 22px;
+    // -webkit-user-select: none;
+    // -moz-user-select: none;
+    // -ms-user-select: none;
+    user-select: none;
+    margin-right: 20px;
+
+    &:hover input ~ .lds-checkmark {
+        background-color: var(--color-black);
+    }
+
+    &:hover input[disabled] ~ .lds-checkmark {
+        background-color: var(--theme-background-lighter);
+    }
+
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    input[disabled] ~ .lds-checkmark {
+        background-color: var(--color-black);
+    }
+
+    input:checked ~ .lds-checkmark {
+        // background: linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%);
+        background-color: var(--color-primary);
+    }
+
+    input[disabled]:checked ~ .lds-checkmark {
+        background-color: var(--theme-background-lighter);
+    }
+
+    input:checked ~ .lds-checkmark:after {
+        display: block;
+    }
+
+    input[disabled]:checked ~ .lds-checkmark:after {
+        background-color: var(--theme-background);
+    }
+    
+    .lds-radio-label {
+        font-size: 14px;
+        font-weight: normal;
+        position: relative;
+        top: -5px;
+        left: 10px;
+    }
+
+    .lds-checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 30px;
+        width: 30px;
+        background-color: var(--color-black);
+        border-radius: 50%;
+        border: 2px solid var(--theme-border);
+
+        &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            top: 5px;
+            left: 5px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: var(--theme-background);
+       }        
+    }
+}
+
+
+/******************************************************/
+.light-theme {
+    .lds-radio-container {
+        &:hover input ~ .lds-checkmark {
+            background-color: var(--color-white);
+        }
+    
+        &:hover input[disabled] ~ .lds-checkmark {
+            background-color: var(--light-theme-background-lighter);
+        }
+    
+        input[disabled] ~ .lds-checkmark {
+            background-color: var(--color-white);
+        }
+    
+        input:checked ~ .lds-checkmark {
+            // background: linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%);
+            background-color: var(--color-primary);
+        }
+    
+        input[disabled]:checked ~ .lds-checkmark {
+            background-color: var(--light-theme-background-lighter);
+        }
+    
+        input[disabled]:checked ~ .lds-checkmark:after {
+            background-color: var(--light-theme-background);
+        }    
+    
+        .lds-checkmark {
+            background-color: var(--color-white);
+            border: 2px solid var(--light-theme-border);
+    
+            &:after {
+               background-color: var(--light-theme-background);
+           }        
+        }
+    }
+
+}
