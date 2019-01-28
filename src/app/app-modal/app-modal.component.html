@@ -1,0 +1,50 @@
+<div class="lds-modal fade app-modal-page" tabindex="-1" role="dialog">
+  <div class="app-modal-close">
+    <button type="button" class="lds-btn lds-btn-lg lds-btn-secondary" data-dismiss="modal" aria-label="Close">
+      <i class="fas fa-times fa-fw"></i>
+    </button>
+  </div>
+
+  <div *ngIf="hasPreviousJob" class="app-left-modal-button">
+    <button type="button" class="lds-btn lds-btn-lg lds-btn-secondary" (click)="previousJob()">
+      <i class="fas fa-long-arrow-alt-left fa-fw"></i>
+    </button>
+  </div>
+
+  <div *ngIf="hasNextJob" class="app-right-modal-button">
+    <button type="button" class="lds-btn lds-btn-lg lds-btn-secondary" (click)="nextJob()">
+      <i class="fas fa-long-arrow-alt-right fa-fw"></i>
+    </button>
+  </div>
+
+  <div class="lds-modal-dialog-full" role="document" style="border: 1px solid red">
+    <div class="lds-container" style="border: 1px solid orange;">
+      <div class="lds-modal-content">
+        <div class="lds-modal-body" (click)="onModalBodyClick()" style="overflow-x: scroll">
+          <div class="lds-container">
+
+            <!-- <div class="h2 mb-3 text-center">{{ job?.company }}</div> -->
+            <div class="lds-row" *ngFor="let job of allJobs" style="width: 500px; border: 1px solid lime; display: inline-block !important;">
+              <!-- <div class="lds-col">
+                <div>Col 1</div>
+              </div> -->
+              <div class="lds-col">
+                <div class="h2 mb-3 text-center">{{ job?.company }}</div>
+              </div>
+              <!-- <div class="lds-col">
+                <div>Col 3</div>
+              </div>                         -->
+            </div>
+
+        </div>
+
+                
+
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>

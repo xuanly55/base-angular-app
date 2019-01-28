@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AppService } from '../app.service';
 
+declare var $: any;
+
 @Component({
   selector: 'app-app-main',
   templateUrl: './app-main.component.html',
@@ -28,6 +30,12 @@ export class AppMainComponent implements OnInit {
     }];
 
     console.log(await this.appService.getNewJobs());
+  }
+
+  displayModal() {
+    (<any>$('.app-modal-page')).modal({
+      backdrop: 'static'
+    });
   }
 
 }

@@ -1,10 +1,28 @@
 <app-navbar [tabs]="mainTabs"></app-navbar>
 <div class="app-page-body">
   <div class="lds-container">
-    <h3 class="mb-3">Main Page</h3>
+    <h3 class="mb-4">Main Page</h3>
 
-    <lds-radio></lds-radio>
-    <!-- <lds-toggle></lds-toggle>
+    <div class="lds-row mb-3">
+      <div class="lds-col-4">
+        <div>
+          <lds-toggle></lds-toggle>
+        </div>
+      </div>
+      <div class="lds-col-4">
+        <div>
+          <lds-radio></lds-radio>
+        </div>
+      </div>
+      <div class="lds-col-4">
+        <div>
+          <button class="lds-btn lds-btn-action" (click)="displayModal()">Modal</button>
+        </div>
+      </div>      
+    </div>
+
+    
+    <!-- 
     <app-device-laptop></app-device-laptop>
     <app-device-smartphone></app-device-smartphone>
     <app-device-tablet></app-device-tablet> -->

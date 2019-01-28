@@ -1,3 +1,26 @@
+.app-modal-close {
+  position: fixed;
+  top: 40px;
+  right: 60px;
+  z-index: 2000;
+  opacity: 1;
+}
+
+.app-right-modal-button,
+.app-left-modal-button {
+  position: fixed;
+  top: 50%;
+  z-index: 2000;
+  opacity: 1;
+}
+
+.app-right-modal-button {
+  right: calc(6% + 17px);
+}
+.app-left-modal-button {
+  left: 6%;
+}
+
 .light-theme {
 }
 
