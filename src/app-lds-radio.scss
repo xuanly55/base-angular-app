@@ -101,11 +101,15 @@
     
         input[disabled]:checked ~ .lds-checkmark {
             background-color: var(--light-theme-background-lighter);
+
+            &:after {
+                background-color: var(--light-theme-background);
+            }
         }
     
-        input[disabled]:checked ~ .lds-checkmark:after {
-            background-color: var(--light-theme-background);
-        }    
+        // input[disabled]:checked ~ .lds-checkmark:after {
+        //     background-color: var(--light-theme-background);
+        // }    
     
         .lds-checkmark {
             background-color: var(--color-white);
