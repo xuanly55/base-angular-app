@@ -1,0 +1,11 @@
+<div class="clickable" (click)="toggle()">
+  <div *ngIf="isOn" class="toggle-button-outer-on">
+    <div class="toggle-button-label-on">ON</div>
+    <div class="toggle-button-inner"></div>
+  </div>
+  
+  <div *ngIf="!isOn" class="toggle-button-outer-off">
+    <div class="toggle-button-inner"></div>
+    <div class="toggle-button-label-off">OFF</div>
+  </div>
+</div>
