@@ -17,31 +17,44 @@
     </button>
   </div>
 
-  <div class="lds-modal-dialog-full" role="document" style="border: 1px solid red">
-    <div class="lds-container" style="border: 1px solid orange;">
+  <div class="lds-modal-dialog-full" role="document">
+    <div class="lds-container">
       <div class="lds-modal-content">
-        <div class="lds-modal-body" (click)="onModalBodyClick()" style="overflow-x: scroll">
-          <div class="lds-container">
+        <!-- <div class="" (click)="onModalBodyClick()"> -->
 
-            <!-- <div class="h2 mb-3 text-center">{{ job?.company }}</div> -->
-            <div class="lds-row" *ngFor="let job of allJobs" style="width: 500px; border: 1px solid lime; display: inline-block !important;">
-              <!-- <div class="lds-col">
-                <div>Col 1</div>
+            <!-- <div class="lds-row mb-3">
+                <div class="lds-col"> -->
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="lds-modal-body carousel-inner" style="padding: 0px;">
+                          <div class="carousel-item" *ngFor="let job of allJobs" [ngClass]="{ 'active' : job.active }"  style="border: 1px solid transparent;" 
+                          [style.borderColor]="job.isEven ? 'red': 'green'" >
+                            <!-- <div class="w-100" style="">  -->
+                              <div class="h1 text-center pt-5">{{ job.company }}</div>         
+                            <!-- </div>                   -->
+                          </div>
+                          <!-- <div class="carousel-item">
+                              <div class="w-100" style="border: 1px solid orange; height: 500px">2 - {{ currentJob?.company }}</div>                            
+                          </div>
+                          <div class="carousel-item">
+                              <div class="w-100" style="border: 1px solid yellow; height: 500px">3</div>                            
+                          </div> -->
+                        </div>
+                      </div>
+                      <!-- <a class="carousel-control-prev" href="javascript: void(0);" role="button" data-slide="prev" (click)="prevSlide()">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="javascript: void(0);" role="button" data-slide="next" (click)="nextSlide()">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a> -->
+                <!-- </div>
               </div> -->
-              <div class="lds-col">
-                <div class="h2 mb-3 text-center">{{ job?.company }}</div>
-              </div>
-              <!-- <div class="lds-col">
-                <div>Col 3</div>
-              </div>                         -->
-            </div>
-
-        </div>
 
                 
 
 
-        </div>
+        <!-- </div> -->
 
       </div>
     </div>

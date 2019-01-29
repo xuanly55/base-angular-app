@@ -21,8 +21,13 @@ export class AppModalComponent implements OnInit {
     $('.app-modal-page').on('show.bs.modal', async (e) => {
       this.allJobs = await this.appService.getNewJobs();
       this.currentJob = this.allJobs[3];
+      this.allJobs.map(ajob => {
+        ajob.active = ajob.id === this.currentJob.id ? true : false;
+        ajob.isEven = Number(ajob.id) % 2 === 0 ? true : false;
+      });
 
       this.hasJobs();
+      (<any>$('.carousel')).carousel('pause');
     });
   }
 
@@ -34,6 +39,8 @@ export class AppModalComponent implements OnInit {
     }
 
     this.hasJobs();
+
+    this.nextSlide();
   }
 
   previousJob() {
@@ -44,6 +51,8 @@ export class AppModalComponent implements OnInit {
     }
 
     this.hasJobs();
+
+    this.prevSlide();
   }
 
   hasJobs() {
@@ -53,7 +62,15 @@ export class AppModalComponent implements OnInit {
   }
 
   onModalBodyClick() {
-    alert('body clicked');
+    // alert('body clicked');
+  }
+
+  prevSlide() {
+    (<any>$('.carousel')).carousel('prev');
+  }
+
+  nextSlide() {
+    (<any>$('.carousel')).carousel('next');
   }
 
 
