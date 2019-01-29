@@ -27,6 +27,12 @@ import { AppSigninComponent } from './app-signin/app-signin.component';
 import { AppMainComponent } from './app-main/app-main.component';
 import { AppSwipeComponent } from './app-swipe/app-swipe.component';
 import { AppSettingsComponent } from './app-settings/app-settings.component';
+import { DeviceLaptopComponent } from './components/device-laptop/device-laptop.component';
+import { DeviceSmartphoneComponent } from './components/device-smartphone/device-smartphone.component';
+import { DeviceTabletComponent } from './components/device-tablet/device-tablet.component';
+import { LdsToggleComponent } from './components/lds-toggle/lds-toggle.component';
+import { LdsRadioComponent } from './components/lds-radio/lds-radio.component';
+import { AppModalComponent } from './app-modal/app-modal.component';
 
 
 @NgModule({
@@ -36,7 +42,13 @@ import { AppSettingsComponent } from './app-settings/app-settings.component';
     AppSigninComponent,
     AppMainComponent,
     AppSwipeComponent,
-    AppSettingsComponent
+    AppSettingsComponent,
+    DeviceLaptopComponent,
+    DeviceSmartphoneComponent,
+    DeviceTabletComponent,
+    LdsToggleComponent,
+    LdsRadioComponent,
+    AppModalComponent
   ],
   imports: [
     BrowserModule,

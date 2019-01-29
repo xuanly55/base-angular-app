@@ -3172,7 +3172,7 @@ body {
   line-height: 1.5;
   color: #fff;
   text-align: left;
-  background-color: #333333; }
+  background-color: #231f20; }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -3855,7 +3855,7 @@ mark,
 
 .lds-alert {
   position: relative;
-  padding: 0.4rem 1rem 0.52rem;
+  padding: 0.375rem 1rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid transparent;
   text-align: left; }
@@ -3868,12 +3868,12 @@ mark,
 
 .lds-alert-butter-bar {
   margin: 0;
-  border-radius: 0.125rem;
+  border-radius: 0.1875rem;
   border: 1px solid transparent; }
 
 .lds-alert-toast {
   margin: 0;
-  border-radius: 0.25rem;
+  border-radius: 0.375rem;
   text-align: left;
   float: right; }
 
@@ -3884,7 +3884,9 @@ mark,
     position: absolute;
     top: 0;
     right: 0;
-    padding: 0.5rem 1rem;
+    padding-top: 0.625rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     color: inherit;
     font-size: 1rem; }
     .lds-alert-dismissible .close:hover {
@@ -3907,16 +3909,11 @@ mark,
             font-variant-ligatures: normal;
     font-weight: 900;
     margin-right: 5px;
-    width: 1.25rem;
-    height: 1.25rem;
-    font-size: 1rem;
-    display: inline-block;
     margin-right: 15px;
     border-radius: 50%;
     color: #fff;
     background-color: #f03e3e;
-    text-align: center;
-    padding-top: 1px;
+    border: 2px solid #f03e3e;
     padding-left: 1px; }
   .lds-alert-danger .close:hover {
     color: #fff !important; }
@@ -3942,16 +3939,11 @@ mark,
             font-variant-ligatures: normal;
     font-weight: 900;
     margin-right: 5px;
-    width: 1.25rem;
-    height: 1.25rem;
-    font-size: 1rem;
-    display: inline-block;
     margin-right: 15px;
     border-radius: 50%;
     color: #fff;
     background-color: #f03e3e;
-    text-align: center;
-    padding-top: 1px;
+    border: 2px solid #f03e3e;
     padding-left: 1px; }
 
 .lds-alert-danger.lds-alert-toast.lds-alert-dismissible .close {
@@ -3976,16 +3968,11 @@ mark,
             font-variant-ligatures: normal;
     font-weight: 900;
     margin-right: 5px;
-    width: 1.25rem;
-    height: 1.25rem;
-    font-size: 1rem;
-    display: inline-block;
     margin-right: 15px;
     border-radius: 50%;
     color: #fff;
     background-color: #37b24d;
-    text-align: center;
-    padding-top: 1px;
+    border: 2px solid #37b24d;
     padding-left: 1px; }
   .lds-alert-action .close:hover {
     color: #fff !important; }
@@ -4011,16 +3998,11 @@ mark,
             font-variant-ligatures: normal;
     font-weight: 900;
     margin-right: 5px;
-    width: 1.25rem;
-    height: 1.25rem;
-    font-size: 1rem;
-    display: inline-block;
     margin-right: 15px;
     border-radius: 50%;
     color: #fff;
     background-color: #37b24d;
-    text-align: center;
-    padding-top: 1px;
+    border: 2px solid #37b24d;
     padding-left: 1px; }
 
 .lds-alert-action.lds-alert-toast.lds-alert-dismissible .close {
@@ -4045,16 +4027,11 @@ mark,
             font-variant-ligatures: normal;
     font-weight: 900;
     margin-right: 5px;
-    width: 1.25rem;
-    height: 1.25rem;
-    font-size: 1rem;
-    display: inline-block;
     margin-right: 15px;
     border-radius: 50%;
     color: #fff;
     background-color: #f7941d;
-    text-align: center;
-    padding-top: 1px;
+    border: 2px solid #f7941d;
     padding-left: 1px; }
   .lds-alert-warning .close:hover {
     color: #fff !important; }
@@ -4080,16 +4057,11 @@ mark,
             font-variant-ligatures: normal;
     font-weight: 900;
     margin-right: 5px;
-    width: 1.25rem;
-    height: 1.25rem;
-    font-size: 1rem;
-    display: inline-block;
     margin-right: 15px;
     border-radius: 50%;
     color: #fff;
     background-color: #f7941d;
-    text-align: center;
-    padding-top: 1px;
+    border: 2px solid #f7941d;
     padding-left: 1px; }
 
 .lds-alert-warning.lds-alert-toast.lds-alert-dismissible .close {
@@ -4106,7 +4078,7 @@ mark,
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: 0.125rem; }
+  border-radius: 0.1875rem; }
   .lds-badge[href]:hover, .lds-badge[href]:focus {
     text-decoration: none; }
   .lds-badge:empty {
@@ -4200,7 +4172,7 @@ mark,
   padding: 0.5rem 0.75rem;
   font-size: 0.75rem;
   line-height: 1.5;
-  border-radius: 0.125rem; }
+  border-radius: 0.1875rem; }
   .lds-btn:hover, .lds-btn:focus {
     outline: 0;
     color: #fff;
@@ -4484,19 +4456,19 @@ mark,
   padding: 1rem 2rem;
   font-size: 1rem;
   line-height: 1.8;
-  border-radius: 0.125rem; }
+  border-radius: 0.1875rem; }
 
 .lds-btn-lg, .lds-btn-group-lg > .lds-btn {
   padding: 0.625rem 1rem;
   font-size: 0.875rem;
   line-height: 1.5rem;
-  border-radius: 0.125rem; }
+  border-radius: 0.1875rem; }
 
 .lds-btn-sm, .lds-btn-group-sm > .lds-btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.6875rem;
   line-height: 1rem;
-  border-radius: 0.125rem; }
+  border-radius: 0.1875rem; }
 
 .lds-btn-rounded-xl {
   padding: 1rem 2rem;
@@ -4650,16 +4622,16 @@ mark,
   background-color: #2d292a;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.125rem; }
+  border-radius: 0.1875rem; }
   .lds-card > hr {
     margin-right: 0;
     margin-left: 0; }
   .lds-card > .list-group:first-child .list-group-item:first-child {
-    border-top-left-radius: 0.125rem;
-    border-top-right-radius: 0.125rem; }
+    border-top-left-radius: 0.1875rem;
+    border-top-right-radius: 0.1875rem; }
   .lds-card > .list-group:last-child .list-group-item:last-child {
-    border-bottom-right-radius: 0.125rem;
-    border-bottom-left-radius: 0.125rem; }
+    border-bottom-right-radius: 0.1875rem;
+    border-bottom-left-radius: 0.1875rem; }
 
 .lds-card-body {
   -webkit-box-flex: 1;
@@ -4689,7 +4661,7 @@ mark,
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
   .lds-card-header:first-child {
-    border-radius: calc(0.125rem - 1px) calc(0.125rem - 1px) 0 0; }
+    border-radius: calc(0.1875rem - 1px) calc(0.1875rem - 1px) 0 0; }
   .lds-card-header + .list-group .list-group-item:first-child {
     border-top: 0; }
 
@@ -4698,7 +4670,7 @@ mark,
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125); }
   .lds-card-footer:last-child {
-    border-radius: 0 0 calc(0.125rem - 1px) calc(0.125rem - 1px); }
+    border-radius: 0 0 calc(0.1875rem - 1px) calc(0.1875rem - 1px); }
 
 .lds-card-header-tabs {
   margin-right: -0.625rem;
@@ -4720,17 +4692,17 @@ mark,
 
 .lds-card-img {
   width: 100%;
-  border-radius: calc(0.125rem - 1px); }
+  border-radius: calc(0.1875rem - 1px); }
 
 .lds-card-img-top {
   width: 100%;
-  border-top-left-radius: calc(0.125rem - 1px);
-  border-top-right-radius: calc(0.125rem - 1px); }
+  border-top-left-radius: calc(0.1875rem - 1px);
+  border-top-right-radius: calc(0.1875rem - 1px); }
 
 .lds-card-img-bottom {
   width: 100%;
-  border-bottom-right-radius: calc(0.125rem - 1px);
-  border-bottom-left-radius: calc(0.125rem - 1px); }
+  border-bottom-right-radius: calc(0.1875rem - 1px);
+  border-bottom-left-radius: calc(0.1875rem - 1px); }
 
 .lds-card-deck {
   display: -webkit-box;
@@ -4886,7 +4858,7 @@ button.close {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.125rem;
+  border-radius: 0.1875rem;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175); }
 
@@ -5072,7 +5044,7 @@ button.close {
   background-color: #2d292a;
   background-clip: padding-box;
   border: 1px solid #413d3e;
-  border-radius: 0.125rem;
+  border-radius: 0.1875rem;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -5561,30 +5533,38 @@ textarea.lds-form-control {
     border-top-right-radius: 0; }
 
 .lds-nav-tabs-vertical {
+  height: inherit;
   -webkit-box-orient: vertical !important;
   -webkit-box-direction: normal !important;
       -ms-flex-direction: column !important;
-          flex-direction: column !important; }
-  .lds-nav-tabs-vertical .lds-nav-link:hover, .lds-nav-tabs-vertical .lds-nav-link:focus {
-    -webkit-box-shadow: inset 3px 0 0 #ff8b48;
-            box-shadow: inset 3px 0 0 #ff8b48;
-    color: #ff8b48; }
-  .lds-nav-tabs-vertical .lds-nav-link.disabled {
-    color: #413d3e;
-    background-color: transparent;
-    border-color: transparent;
-    -webkit-box-shadow: none;
-            box-shadow: none; }
-  .lds-nav-tabs-vertical .lds-nav-link .fas::after {
-    content: '';
-    margin-right: 5px; }
+          flex-direction: column !important;
+  border-right: 1px solid #2d292a; }
+  .lds-nav-tabs-vertical .lds-nav-link {
+    margin-right: -1px;
+    border-bottom: 1px solid #2d292a; }
+    .lds-nav-tabs-vertical .lds-nav-link:hover, .lds-nav-tabs-vertical .lds-nav-link:focus {
+      border-left: 4px solid #ff8b48 !important;
+      color: #ff8b48 !important; }
+    .lds-nav-tabs-vertical .lds-nav-link.disabled {
+      color: #413d3e;
+      background-color: transparent;
+      border-color: transparent;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+    .lds-nav-tabs-vertical .lds-nav-link .fas::after {
+      content: '';
+      margin-right: 5px; }
+  .lds-nav-tabs-vertical .lds-nav-link:not(.active) {
+    color: #918d8e;
+    border-right: 1px solid #2d292a;
+    border-left: 4px solid #2d292a; }
   .lds-nav-tabs-vertical .lds-nav-link.active,
   .lds-nav-tabs-vertical .lds-nav-item.show .lds-nav-link {
     color: #fff;
     font-weight: 600;
-    background-color: #f5f5f5;
-    -webkit-box-shadow: inset 3px 0 0 #f26522;
-            box-shadow: inset 3px 0 0 #f26522; }
+    background-color: #231f20;
+    border-right: 1px solid transparent;
+    border-left: 4px solid #f26522; }
 
 .lds-nav-tabs-bordered {
   border-bottom: 1px solid #2d292a; }
@@ -5596,7 +5576,8 @@ textarea.lds-form-control {
     border-left: 1px solid #2d292a;
     border-right: none; }
     .lds-nav-tabs-bordered .lds-nav-link:hover, .lds-nav-tabs-bordered .lds-nav-link:focus {
-      border-color: #2d292a #2d292a #2d292a; }
+      border-color: #2d292a #2d292a #2d292a;
+      color: #ff8b48; }
     .lds-nav-tabs-bordered .lds-nav-link.disabled {
       color: #413d3e;
       background-color: transparent;
@@ -5620,7 +5601,7 @@ textarea.lds-form-control {
     border-top-right-radius: 0; }
 
 .lds-nav-pills .lds-nav-link {
-  border-radius: 0.125rem; }
+  border-radius: 0.1875rem; }
 
 .lds-nav-pills .lds-nav-link.active,
 .lds-nav-pills .show > .lds-nav-link {
@@ -5696,6 +5677,20 @@ textarea.lds-form-control {
     color: #231f20;
     background-color: #f5f5f5; }
 
+.light-theme .lds-nav-tabs-vertical {
+  border-right: 1px solid #dcdcdc; }
+  .light-theme .lds-nav-tabs-vertical .lds-nav-link {
+    border-bottom: 1px solid #dcdcdc; }
+    .light-theme .lds-nav-tabs-vertical .lds-nav-link.disabled {
+      color: #413d3e; }
+  .light-theme .lds-nav-tabs-vertical .lds-nav-link:not(.active) {
+    border-right: 1px solid #dcdcdc;
+    border-left: 4px solid #dcdcdc; }
+  .light-theme .lds-nav-tabs-vertical .lds-nav-link.active,
+  .light-theme .lds-nav-tabs-vertical .lds-nav-item.show .lds-nav-link {
+    color: #231f20;
+    background-color: #f5f5f5; }
+
 @-webkit-keyframes progress-bar-stripes {
   from {
     background-position: 3rem 0; }
@@ -5718,7 +5713,7 @@ textarea.lds-form-control {
   background-color: #918d8e;
   border-top: 1rem solid white;
   border-bottom: 1rem solid white;
-  border-radius: 0.125rem;
+  border-radius: 0.1875rem;
   z-index: 900;
   position: relative; }
 
@@ -5766,7 +5761,7 @@ textarea.lds-form-control {
   .lds-table tbody + tbody {
     border-top: 2px solid #7d797a; }
   .lds-table .lds-table {
-    background-color: #333333; }
+    background-color: #231f20; }
 
 .lds-table-lg th,
 .lds-table-lg td {
@@ -5879,7 +5874,7 @@ textarea.lds-form-control {
     background-color: #bdbcbc; }
 
 .lds-table .lds-thead-dark th {
-  color: #333333;
+  color: #231f20;
   background-color: #231f20;
   border-color: #373133; }
 
@@ -5889,7 +5884,7 @@ textarea.lds-form-control {
   border-color: #7d797a; }
 
 .lds-table-dark {
-  color: #333333;
+  color: #231f20;
   background-color: #231f20; }
   .lds-table-dark th,
   .lds-table-dark td,
@@ -6046,7 +6041,7 @@ textarea.lds-form-control {
   color: #fff;
   text-align: center;
   background-color: #000;
-  border-radius: 0.125rem; }
+  border-radius: 0.1875rem; }
 
 .fade {
   -webkit-transition: opacity 0.15s linear;
@@ -6080,7 +6075,9 @@ textarea.lds-form-control {
   max-height: 1080px; }
   .lds-signin-background button, .lds-signin-right-container button {
     font-size: .75rem;
-    line-height: 1rem; }
+    line-height: 1rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem; }
 
 .lds-signin-background {
   position: absolute;
@@ -6127,12 +6124,12 @@ textarea.lds-form-control {
   line-height: 20px;
   margin-bottom: 24px; }
   .lds-signin-credentials-container .lds-form-control {
-    color: #7d797a;
+    color: #918d8e;
     font-size: .75rem;
     border: none;
     border-bottom: 1px solid #2d292a;
     border-radius: 0px;
-    padding: 15px 20px;
+    padding: 20px;
     background-color: inherit;
     outline: none; }
     .lds-signin-credentials-container .lds-form-control:focus {
@@ -6234,23 +6231,23 @@ textarea.lds-form-control {
   border-left: 0 !important; }
 
 .lds-rounded {
-  border-radius: 0.125rem !important; }
+  border-radius: 0.1875rem !important; }
 
 .lds-rounded-top {
-  border-top-left-radius: 0.125rem !important;
-  border-top-right-radius: 0.125rem !important; }
+  border-top-left-radius: 0.1875rem !important;
+  border-top-right-radius: 0.1875rem !important; }
 
 .lds-rounded-right {
-  border-top-right-radius: 0.125rem !important;
-  border-bottom-right-radius: 0.125rem !important; }
+  border-top-right-radius: 0.1875rem !important;
+  border-bottom-right-radius: 0.1875rem !important; }
 
 .lds-rounded-bottom {
-  border-bottom-right-radius: 0.125rem !important;
-  border-bottom-left-radius: 0.125rem !important; }
+  border-bottom-right-radius: 0.1875rem !important;
+  border-bottom-left-radius: 0.1875rem !important; }
 
 .lds-rounded-left {
-  border-top-left-radius: 0.125rem !important;
-  border-bottom-left-radius: 0.125rem !important; }
+  border-top-left-radius: 0.1875rem !important;
+  border-bottom-left-radius: 0.1875rem !important; }
 
 .lds-rounded-circle {
   border-radius: 50% !important; }
